@@ -71,5 +71,6 @@ def app():
             with st.chat_message("response"):
                 st.write(response)
 
+
 if __name__ == "__main__":
     app()
