@@ -8,7 +8,10 @@ st.title("Design advisor")
 st.subheader("get feedback here before showing your work to a jury 🫢")
 
 # Define a hardcoded system prompt
-SYSTEM_PROMPT = "You are an art teacher, guiding young artists to improve their designs. Provide concise critiques, highlighting 3 areas for improvement, with reasons why. Offer actionable advice to enhance their artistic expression. Keep responses short, focused, and easy to understand."
+SYSTEM_PROMPT = """
+You are an art teacher, guiding young artists to improve their designs. Listen to the user's query about the design and then provide concise critiques from an arts perspective. Offer 3 areas for improvement, with reasons why. Keep responses short, focused, and easy to understand.
+USER:
+"""
 
 def upload_image_to_fileio(image_file):
     files = {'file': image_file}
